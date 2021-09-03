@@ -15,12 +15,16 @@
     This thing is completely free to use (Please Download it!) and totally modificable (if it's a little buggy do something :D)
 
     Yes, you probably see that you need Ctrl+c to save, that's because you need to "kill" the terminal to save, and that's called "Automatic Save"
-    If you have an issue with the executable, re-compile it with your compiler (for windows there's Visual Studio build tools and MinGW, these are the most popular)        and that's all                                                                       
+    If you have an issue with the executable, re-compile it with your compiler (for windows there's Visual Studio build tools and MinGW, these are the most popular)        and that's all   
+    ok down there you have the code                                                                    
 */
 
+/* Libraries */
 #include <stdio.h>
 #include <conio.h>
 
+
+/* Main Code */
 int main()
 {
     FILE *fp;
@@ -36,7 +40,7 @@ int main()
     {
         fp=fopen(fn, "r");
 
-        printf("\n\n\n\t\t Mode: READ");
+        printf("\n\n\n\t\t Mode: READ"); /* Read Mode */
         printf("\n\t\t To save Files, use Ctrl+c\n\n");
 
         while((in=getc(fp)) != EOF)
@@ -50,7 +54,7 @@ int main()
     {
         fp=fopen(fn, "w");
 
-        printf("\n\n\n\t\tMode: WRITE\n");
+        printf("\n\n\n\t\tMode: WRITE\n");     /* Write Mode*/
         printf("\n\t\t To save Files, use Ctrl+c\n\n");
 
         while((in=getchar()) !=EOF)
@@ -64,7 +68,7 @@ int main()
     {
         fp=fopen(fn, "a");
 
-        printf("\n\n\n\t\tMode: Add\n\n");
+        printf("\n\n\n\t\tMode: Add\n\n");          /* Add Mode, you can't see the text! */
         printf("\n\t\t To save Files, use Ctrl+c\n\n");
 
         while((in=getchar()) !=EOF)
