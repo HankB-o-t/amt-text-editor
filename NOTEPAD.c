@@ -18,7 +18,7 @@
     If you have an issue with the executable, re-compile it with your compiler (for windows there's Visual Studio build tools and MinGW, these are the most popular)                                                                                   
 */
 
-#include <stdio.h>               /* https://youtu.be/JXqs6knbtWM?t=752 */
+#include <stdio.h>
 #include <conio.h>
 
 int main()
@@ -37,7 +37,7 @@ int main()
         fp=fopen(fn, "r");
 
         printf("\n\n\n\t\t Mode: READ");
-        printf("\n\t\t To save Files, use Ctrl+s\n\n");
+        printf("\n\t\t To save Files, use Ctrl+c\n\n");
 
         while((in=getc(fp)) != EOF)
         {
@@ -65,7 +65,7 @@ int main()
         fp=fopen(fn, "a");
 
         printf("\n\n\n\t\tMode: Add\n\n");
-        printf("\n\t\t To save Files, use Ctrl+s\n\n");
+        printf("\n\t\t To save Files, use Ctrl+c\n\n");
 
         while((in=getchar()) !=EOF)
         {
