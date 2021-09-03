@@ -15,7 +15,7 @@
     This thing is completely free to use (Please Download it!) and totally modificable (if it's a little buggy do something :D)
 
     Yes, you probably see that you need Ctrl+c to save, that's because you need to "kill" the terminal to save, and that's called "Automatic Save"
-    If you have an issue with the executable, re-compile it with your compiler (for windows there's Visual Studio build tools and MinGW, these are the most popular)                                                                                   
+    If you have an issue with the executable, re-compile it with your compiler (for windows there's Visual Studio build tools and MinGW, these are the most popular)        and that's all                                                                       
 */
 
 #include <stdio.h>
